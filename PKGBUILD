@@ -2,12 +2,12 @@
 
 pkgname=dri2to3-git
 pkgver=r6.43a51c6
-pkgrel=1
+pkgrel=2
 pkgdesc='Library implementing DRI2 on top of DRI3 for running blob X11 drivers under Xwayland.'
 arch=('aarch64' 'armv7h')
 url='https://github.com/hbiyik/dri2to3'
 license=('MIT')
-depends=('gcc-libs' 'coreutils' 'mesa')
+depends=('gcc-libs' 'coreutils' 'mesa' 'libxcb')
 makedepends=('meson' 'ninja')
 options=(!lto debug strip)
 source=(git+https://github.com/hbiyik/dri2to3.git#branch=main)
